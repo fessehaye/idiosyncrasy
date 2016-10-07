@@ -1,0 +1,203 @@
+﻿/*!
+ * Durandal 2.1.0 Copyright (c) 2012 Blue Spire Consulting, Inc. All Rights Reserved.
+ * Available via the MIT license.
+ * see: http://durandaljs.com or https://github.com/BlueSpire/Durandal for details
+ */
+
+ @font-face {
+     font-family: 'titillium'; /*a name to be used later*/
+     src: url('../img/Titillium-Regular.otf') format("opentype"); /*URL to font*/
+ }
+
+.splash {
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+.splash .message {
+    font-size: 5em;
+    line-height: 1.5em;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-transform: uppercase;
+}
+
+.splash .fa-spinner {
+    text-align: center;
+    /*display: inline-block;*/
+    font-size: 5em;
+    margin-top: 50px;
+}
+
+.page-host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #2F2B3C;
+}
+
+#outPopUp {
+  position: absolute;
+  z-index: 15;
+  top: 29%;
+  left: 20%;
+}
+
+#pressStart {
+  position: absolute;
+  z-index: 15;
+  top: 53%;
+  left: 41%;
+  background-color: #d66967;
+  color: white;
+}
+
+#myCanvas{
+    background:transparent;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+section {
+    margin: 0 0px;
+}
+
+.navbar-nav li.loader {
+    margin: 12px 6px 0 6px;
+    visibility: hidden;
+}
+
+.navbar-nav li.loader.active {
+    visibility: visible;
+}
+
+.pictureDetail {
+    max-width: 425px;
+}
+
+.btn-xlarge.round {
+	border-radius: 24px;
+}
+
+.btn-xlarge {
+    padding: 14px 27px;
+    font-size: 22px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.title {
+    color:white;
+}
+
+@import "compass/css3";
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: #dbeaeb;
+  padding: 19px;
+  width: 350px;
+  height: 225px;
+  margin-top: 30px;
+
+  line-height: 150px;
+  color: #2F2B3C;
+  font-weight: bold;
+  font-size: 3em;
+  /*text-align: center;
+  display:flex;*/
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item2 {
+  background: #d66967;
+  padding: 19px;
+  width: 350px;
+  height: 225px;
+  margin-top: 30px;
+
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  /*text-align: center;
+  display:flex;*/
+  align-items: center;
+  justify-content: center;
+}
+
+#finalIMG {
+  width: 318px;
+  height: 412px;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgRow {
+  border-color: black;
+  border-radius: 3px;
+  border-style: solid;
+  border: 3px;
+  width: 318px;
+  height: 103px;
+
+
+  margin: 0;
+}
+
+.imgCol{
+  border-color: black;
+  border-radius: 3px;
+  border-style: solid;
+  border: 3px;
+  width: 159px;
+  height: 103px;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'titillium';
+}
+
+@media print {
+  -webkit-print-color-adjust: exact;
+}
+
+@media print {
+    #finalIMG {
+        background-color: white;
+/*        height: 100%;
+        width: 100%;*/
+        margin: 0;
+        /*position: fixed;*/
+       /* bottom: 50px;
+        right: 5px;*/
+    }
+}

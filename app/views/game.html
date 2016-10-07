@@ -1,0 +1,36 @@
+<section>
+  <div class="container">
+
+
+    <div class="row">
+      <h3 class="text-left title" style="color:#d66967">Question <span data-bind="text: questionCount() + 1"></span>/24</h3>
+    </div>
+
+      <div class="row">
+        <h2 class="text-left title" data-bind="text: question().test" ></h2>
+      </div>
+
+      <div class="row">
+
+        <!-- ko  with: question().answers  -->
+            <div class="row" data-bind="foreach: $data.slice(0, 3)">
+                <div class="col-sm-4">
+                  <div data-bind="click: $root.getScore, attr: { class: $data.classes }">
+                    <h3 data-bind="text: $data.name"></h3>
+                  </div>
+                </div>
+            </div>
+            <div  class="row" data-bind="foreach: $data.slice(3,6)">
+              <div class="col-sm-4">
+                <div data-bind="click: $root.getScore, attr: { class: $data.classes }">
+                  <h3 data-bind="text: $data.name"></h3>
+                </div>
+              </div>
+            </div>
+
+        <!-- /ko -->
+      </div>
+
+
+  </div>
+</section>
