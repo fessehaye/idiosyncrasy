@@ -32,7 +32,6 @@ define(['plugins/router','durandal/app','knockout','jquery-csv','underscore','./
       quiz.answers.forEach(function(ans){
         ans.classes = ko.observable('flex-item');
       });
-      console.log(quiz.answers.length)
       question(quiz);
       category(chosen[questionCount()].category);
     }
@@ -40,8 +39,8 @@ define(['plugins/router','durandal/app','knockout','jquery-csv','underscore','./
     function getScore(answer){
       //console.log(answer.points);
       scores[category().toString()] += parseInt(answer.points);
-      // console.log(scores);
-      // console.log(questionCount(),chosen.length);
+      console.log(scores);
+      console.log(questionCount(),chosen.length);
       answer.classes('flex-item2 animated pulse');
 
 
@@ -116,7 +115,7 @@ define(['plugins/router','durandal/app','knockout','jquery-csv','underscore','./
               while ( q[k] !== "") {
                 question_obj.answers.push({
                   name: q[k],
-                  points: score[k-2]
+                  points: score[k-1]
                 });
                 k++;
               }
@@ -137,7 +136,7 @@ define(['plugins/router','durandal/app','knockout','jquery-csv','underscore','./
         });
       },
       deactivate:function(){
-        
+
         questions = {
           '1':[],
           '2':[],
