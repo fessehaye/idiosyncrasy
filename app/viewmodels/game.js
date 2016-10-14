@@ -96,12 +96,13 @@ define(['plugins/router','durandal/app','knockout','jquery-csv','underscore','./
         chosen =  [];
 
         $('.page-host').css('background-color','#4f5b73');
-        $.get( "../data/score.csv", function( score_data ) {
-          $.get( "../data/QA.csv", function( QA ) {
-            var qa = $.csv.toArrays(QA);
-            qa.shift();
-            var scores = $.csv.toArrays(score_data);
+        // $.get( "../data/score.csv", function( score_data ) {
+        //   $.get( "../data/QA.csv", function( QA ) {
 
+            var qa = data.qa;
+            //qa.shift();
+            var scores = data.scores;
+          
             for (var i = 0; i < qa.length; i++) {
               var q = qa[i];
               var score = scores[i];
@@ -132,8 +133,8 @@ define(['plugins/router','durandal/app','knockout','jquery-csv','underscore','./
 
             askQuestion();
 
-          });
-        });
+        //   });
+        // });
       },
       deactivate:function(){
 
