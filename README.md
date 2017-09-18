@@ -19,8 +19,8 @@ Durandal is a cross-device, cross-platform client framework written in JavaScrip
 
 ## Contribution
 
-Design by [Alexa Guse] (http://www.alexaguse.com/)
-Figures by [Maud Madsen]
+Design by [Alexa Guse](http://www.alexaguse.com/)
+Figures by Maud Madsen
 
 ## License
 
