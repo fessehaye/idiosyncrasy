@@ -1,8 +1,6 @@
-![Durandal](http://durandaljs.com/media/DURANDAL-FINAL-HI-RES-LOGO-HOR-WEB.png)
+demo available at [http://idiosyncrasy.surge.sh/](http://idiosyncrasy.surge.sh/)
 
 Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain. We've used it to build apps for PC, Mac, Linux, iOS and Android...and now it's your turn...
-
-[![Build Status](https://travis-ci.org/BlueSpire/Durandal.png?branch=master)](https://travis-ci.org/BlueSpire/Durandal)
 
 ## Features
 
@@ -19,18 +17,10 @@ Durandal is a cross-device, cross-platform client framework written in JavaScrip
 * Make your own templatable and data-bindable widgets.
 * Fully Testable
 
-## Documentation
+## Contribution
 
-All the documentation is located on [the official site](http://durandaljs.com/), so have a look there for help on how to [get started](http://durandaljs.com/get-started.html), [read tutorials](http://durandaljs.com/docs.html), [view sample descriptions](http://durandaljs.com/documentation/Understanding-the-Samples.html) and peruse the module reference docs.
-
-## Community & Support
-
-Need help with something that the docs aren't providing an answer to? 
-Visit our [google group](https://groups.google.com/forum/?fromgroups#!forum/durandaljs) and join in the conversation.
-
-## Contributing
-
-We'd love for you to contribute to the Durandal project! If you are interested, please have a read through our [contributing](/CONTRIBUTING.md) guide.
+Design by [Alexa Guse] (http://www.alexaguse.com/)
+Figures by [Maud Madsen]
 
 ## License
 
